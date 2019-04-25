@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                     String contact = data.get(i).getContact();
                     data data2 = new data(contact,name);
                     data1.add(data2);
+                    recyclerView.setAdapter(adapter);
                     Log.e("hey ", data.get(i).getName());
                 }
 
